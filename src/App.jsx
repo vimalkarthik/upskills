@@ -1,6 +1,7 @@
 import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
 import Toggle from './pages/Toggle';
+import ProductCount from './pages/ProductCount';
 import './App.css'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
     {/* <UseState/> */}
     {/* <UseEffect/> */}
-    <Toggle/>
+    {/* <Toggle/> */}
+    <ProductCount/>
     </>
   )
 }
