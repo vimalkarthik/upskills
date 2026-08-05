@@ -291,6 +291,7 @@ button:focus-visible {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .recipeCard {
@@ -299,11 +300,14 @@ button:focus-visible {
     background: #eeeeee91;
     border-radius: 8px;
     padding: 10px;
+    cursor: pointer;
+    height: stretch;
 }
 .recipeCard img{
     max-width: 240px;
     width: 100%;
     aspect-ratio: 1 / 1;
+    border-radius: 4px;
 }
 .recipeCard ul{
   padding-left: 0;
@@ -318,4 +322,20 @@ button:focus-visible {
   background-color: #213547;
   border-radius: 3px;
   padding: 3px 6px;
+}
+.productDescList {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.productImg{
+  max-width: 500px;
+  width: 40%;
+}
+.productImg img{
+  width: 100%;
+}
+.productCt{
+  width: 60%;
+  text-align: left;
 }
