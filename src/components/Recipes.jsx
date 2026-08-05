@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Recipes() {
   const [items, setItems] = useState([]);
@@ -18,6 +19,11 @@ function Recipes() {
       <h1>Recipes</h1>
       <div className="recipeContainer">
         {items.map((recipe) => (
+              <Link
+      to={`/recipe/${recipe.id}`}
+      key={recipe.id}
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
           <div key={recipe.id} className="recipeCard">
             <img src={recipe.image} alt={recipe.name} />
             <h4>{recipe.name}</h4>
@@ -28,6 +34,7 @@ function Recipes() {
               ))}
             </ul>
           </div>
+          </Link>
         ))}
       </div>
     </div>
