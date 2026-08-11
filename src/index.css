@@ -339,3 +339,20 @@ button:focus-visible {
   width: 60%;
   text-align: left;
 }
+
+/* AutoCounter css */
+body{
+  justify-content: center;
+}
+.AutoCountContainer {
+  width: 620px;
+    display: flex;
+  justify-content: space-between;
+}
+.AutoCountContainer h2{
+  font-size: 18px;
+}
+.AutoCountContainer h3{
+  font-size: 21px;
+  margin-block: 0;
+}
