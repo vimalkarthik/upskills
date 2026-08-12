@@ -8,6 +8,7 @@ import EyeToggle from './pages/EyeToggle';
 import './App.css'
 import Recipes from './components/Recipes';
 import RecipeDesc from './components/RecipeDesc';
+import AutoCounter from "./pages/AutoCounter";
 
 function App() {
   return (
@@ -20,10 +21,12 @@ function App() {
     {/* <EyeToggle/> */}
     {/* <Recipes/> */}
 
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<Recipes />} />
       <Route path="/recipe/:id" element={<RecipeDesc />} />
-    </Routes>
+    </Routes> */}
+
+    <AutoCounter/>
     </>
     
   )
