@@ -33,8 +33,8 @@ function EyeToggle() {
 
               <span onClick={toggleClick} className="eyeIcon">
                 <img
-                  src={open ? hide : view}
-                  alt={open ? "Hide Password" : "Show Password"}
+                  src={open ? view : hide}
+                  alt={open ? "Show Password" : "Hide Password"}
                 />
               </span>
             </div>
